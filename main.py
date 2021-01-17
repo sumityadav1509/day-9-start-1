@@ -29,5 +29,15 @@ travel_log=[
   },
 ]
 
-print(travel_log)
+# print(travel_log)
 
+def add_new_country(country_visited,cities_visited,number_of_visits):
+  new_country={}
+  new_country["Country"]=country_visited
+  new_country["cities_visited"]=cities_visited 
+  new_country["number_of_visits"]=number_of_visits 
+  travel_log.append(new_country)
+
+
+add_new_country("Russia",["Moscow","Saint Petesburgh"],2) 
+print(travel_log)
